@@ -60,6 +60,12 @@ export const App = () => {
               return <Task key={index} value={value.title} index={index} />;
             })}
           </div>
+          <hr />
+          <div>
+            <b>Pending Task to complete</b>
+            <div className="ml-5">{task.length - 1}</div>
+          </div>
+
           <div class="col-3"></div>
         </div>
       </div>
