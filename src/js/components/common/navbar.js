@@ -1,9 +1,6 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 
-export const Topnavbar = () => {
+export const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">

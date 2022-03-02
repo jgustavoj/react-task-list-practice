@@ -3,14 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import injectContext from "./store/appContext";
 
-import { Topnavbar } from "./components/common/navbar";
+import { Navbar } from "./components/common/Navbar.js";
 import { Home } from "./views/home.js";
 
 export const Layout = () => {
   return (
     <div>
       <BrowserRouter>
-        <Topnavbar />
+        <Navbar />
         <div>
           <Routes>
             <Route exact path="/" element={<Home />} />
