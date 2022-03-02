@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { PropTypes } from "prop-types";
 
 export const DeleteTaskModal = (props, index) => {
+  // This function should be in a global state where we pass the id of the item so it can then be
+  // deleted
   const deleteTask = (index) => {
     return () =>
       props.setTasks(() =>
@@ -12,7 +14,6 @@ export const DeleteTaskModal = (props, index) => {
   };
   return (
     <>
-      {console.log("THERE", props.show)}
       <div
         className="modal"
         tabIndex="-1"

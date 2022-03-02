@@ -4,7 +4,7 @@ import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { PropTypes } from "prop-types";
 import { DeleteTaskModal } from "../common/DeleteTaskModal";
 
-export const Task = ({ props, value, index, deleteTask }) => {
+export const Task = ({ props, value, index }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -50,8 +50,3 @@ Task.propTypes = {
 Task.defaultProps = {
   onDelete: null,
 };
-
-// onClick={() => deleteTask(index)}
-// onDelete={() => {
-//   setShowModal(true);
-// }}

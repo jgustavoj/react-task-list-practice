@@ -15,6 +15,13 @@ const getState = ({ getStore, getActions, setStore }) => {
       ],
     },
     actions: {
+      // deleteTask: (index) => {
+      //   return setTasks(() =>
+      //       tasks.filter((task, i) => {
+      //         return i !== index;
+      //       })
+      //     )
+      // },
       // Use getActions to call a function within a fuction
       exampleFunction: () => {
         getActions().changeColor(0, "green");
